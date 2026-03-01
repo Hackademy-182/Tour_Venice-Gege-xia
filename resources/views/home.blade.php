@@ -93,7 +93,8 @@
             </div>
 
             <div class="col-md-4">
-                <div class="pack pack-gold p-4 rounded-5 h-100 border border-warning-subtle  d-flex flex-column">
+                <div
+                    class="pack pack-gold vl-featured p-4 rounded-5 h-100 d-flex flex-column border border-warning-subtle">
                     <div class="d-flex justify-content-between align-items-start">
                         <h3 class="h5 fw-bold mb-0">Oro</h3>
                         <span class="badge rounded-pill text-bg-warning">Best</span>

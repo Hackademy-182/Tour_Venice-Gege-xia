@@ -115,9 +115,46 @@
 
 /* Packages */
 .pack {
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    padding: 28px !important;
+    border-radius: 34px !important;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.pack .h5 {
+    font-size: 1.35rem;
+}
+.pack p {
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+.pack ul {
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+
+.pack ul li {
+    margin-bottom: 10px;
+    line-height: 1.55;
+}
+
+/* header spacing */
+.pack .badge {
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+}
+
+/* hover soft */
+.pack:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+}
+
+/* col gap più elegante */
+@media (min-width: 768px) {
+    .row.g-3 {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 1.5rem;
+    }
 }
 .pack-bronze {
 }
@@ -129,4 +166,13 @@
     max-width: 3500px;
     margin: 0 auto;
     padding: 0 200px;
+}
+.vl-featured {
+    transform: translateY(-6px);
+    border-width: 2px !important;
+}
+@media (max-width: 767px) {
+    .vl-featured {
+        transform: none;
+    }
 }
