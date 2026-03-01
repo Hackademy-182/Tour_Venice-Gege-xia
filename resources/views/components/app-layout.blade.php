@@ -23,17 +23,10 @@
         </div>
     </nav>
 
-    <main class="flex-fill container py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-
-                    {{ $slot }}
-
-                </div>
-            </div>
+    <main class="flex-fill container-fluid py-5">
+        <div class="vl-max">
+            {{ $slot }}
         </div>
-
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-auto d-flex fixed-bottom">

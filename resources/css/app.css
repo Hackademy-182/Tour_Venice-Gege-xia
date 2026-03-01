@@ -1,1 +1,132 @@
 @import "bootstrap";
+/* Veniceland - base look */
+.hero-vl {
+    background:
+        radial-gradient(
+            1200px 600px at 20% 10%,
+            rgba(255, 255, 255, 0.25),
+            transparent 60%
+        ),
+        radial-gradient(
+            900px 500px at 80% 30%,
+            rgba(0, 255, 240, 0.18),
+            transparent 55%
+        ),
+        linear-gradient(135deg, #0b1b2e 0%, #0e3a4a 45%, #0a6b6b 100%);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.tag-vl {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 0.9rem;
+}
+
+/* Hero glow blobs */
+.hero-blur {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    filter: blur(60px);
+    opacity: 0.55;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero-blur.a {
+    left: -120px;
+    top: -120px;
+    background: #00ffe5;
+}
+.hero-blur.b {
+    right: -140px;
+    bottom: -160px;
+    background: #ffd36e;
+}
+
+/* Orbit section */
+.orbit-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.orbit {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+}
+
+.orbit-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: white;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.orbit-card:hover {
+    transform: translate(-50%, -50%) scale(1.06);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+}
+
+/* Posizionamento a cerchio (8 elementi) */
+.orbit-card:nth-child(1) {
+    transform: translate(-50%, -50%) translate(0, -185px);
+}
+.orbit-card:nth-child(2) {
+    transform: translate(-50%, -50%) translate(130px, -130px);
+}
+.orbit-card:nth-child(3) {
+    transform: translate(-50%, -50%) translate(185px, 0);
+}
+.orbit-card:nth-child(4) {
+    transform: translate(-50%, -50%) translate(130px, 130px);
+}
+.orbit-card:nth-child(5) {
+    transform: translate(-50%, -50%) translate(0, 185px);
+}
+.orbit-card:nth-child(6) {
+    transform: translate(-50%, -50%) translate(-130px, 130px);
+}
+.orbit-card:nth-child(7) {
+    transform: translate(-50%, -50%) translate(-185px, 0);
+}
+.orbit-card:nth-child(8) {
+    transform: translate(-50%, -50%) translate(-130px, -130px);
+}
+
+/* Packages */
+.pack {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+.pack-bronze {
+}
+.pack-gold {
+}
+.pack-diamond {
+}
+.vl-max {
+    max-width: 3500px;
+    margin: 0 auto;
+    padding: 0 200px;
+}
