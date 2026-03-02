@@ -1,8 +1,8 @@
 <x-app-layout>
-    <div class="cotainer py-4">
+    <div class="container py-4">
         <div class="align-items-end justify-content-between flex-wrap gap-2 mb-3">
             <div class= "d-flex justify-content-center">
-                <h1 classe='h3 fw-bold mb-1 '></h1>
+                <h1 class='h3 fw-bold mb-1 '></h1>
                 <a href="/" class="btn btn-outline-dark rounded-pill">Torna indietro </a>
             </div>
         </div>
@@ -10,7 +10,7 @@
         <div class="row g-4">
             <div class="col-lg-5">
                 <div class="bg-white border rounded-5 p-4 shadow-sm">
-                    <h2 class="h5 fw-bold-mb-3">1:Scegli pacchetto</h2>
+                    <h2 class="h5 fw-bold mb-3">Scegli pacchetto</h2>
                     <div class="vstack gap-2">
                         <label class="vl-choice">
                             <input type="radio" name = "package" value="base" checked>
@@ -22,12 +22,12 @@
                                             Esperenza </div>
                                     </div>
 
-                                    <span>Da $250 a Persona (1-3 Persone) </span>
+                                    <span>$140/h</span>
                                 </div>
                             </div>
                         </label>
                         <label class="vl-choice">
-                            <input type="radio" name = "package" value="base" checked>
+                            <input type="radio" name = "package" value="gold">
                             <div class="vl-choice__box">
                                 <div class="d-flex justify-content-between aligh-item-start">
                                     <div>
@@ -35,26 +35,26 @@
                                         <div class="badge text-bg-light rounded-pill">4-5h Murano-Burano && Tempo libero
                                         </div>
                                     </div>
-                                    <span>Da $300 a Persona (2-6 Persone) </span>
+                                    <span>$300/h </span>
                                 </div>
                             </div>
                         </label>
                         <label class="vl-choice">
-                            <input type="radio" name = "package" value="base" checked>
+                            <input type="radio" name = "package" value="diamond">
                             <div class="vl-choice__box">
-                                <div class="d-flex justify-content-between aligh-item-start">
+                                <div class="d-flex justify-content-between aligh-items-start">
                                     <div>
                                         <div class="fw-bold">Diamante</div>
                                         <div class="badge text-bg-light rounded-pill">3-8h Rotta Personalizzata </div>
                                     </div>
-                                    <span>Da $350 a Persona (3-6 Persone) </span>
+                                    <span>$360/h</span>
                                 </div>
                             </div>
                         </label>
                     </div>
                     <hr class="my-4">
 
-                    <h3 class="h6 fw-bold mb-2">2) Extra</h3>
+                    <h3 class="h6 fw-bold mb-2">Extra</h3>
                     <div class="vstack gap-2">
                         <label class="form-check">
                             <input class="form-check-input" type="checkbox" name="extras[]" value="pranzo">
@@ -65,8 +65,11 @@
                             <span class="form-check-label">Aperitivo Premium</span>
                         </label>
                         <label class="form-check">
-                            <input class="form-check-input" type="checkbox" name="extras[]" value="passaggio">
-                            <span class="form-check-label">Passaggio (transfer) in laguna</span>
+                            <input class="form-check-input" type="checkbox" name="extras[]" value="passaggio/ritiro">
+                            <span class="form-check-label">Passaggio/Ritiro</span>
+                        </label> <label class="form-check">
+                            <input class="form-check-input" type="checkbox" name="extras[]" value="">
+                            <span class="form-check-label">Non grazie</span>
                         </label>
                     </div>
 
@@ -81,7 +84,7 @@
                 <form class="bg-white border rounded-5 p-4 shadow-sm" method="POST" action="#">
                     @csrf
 
-                    <h2 class="h5 fw-bold mb-3">3) I tuoi dati</h2>
+                    <h2 class="h5 fw-bold mb-3"> I tuoi dati</h2>
 
                     <div class="row g-3">
                         <div class="col-md-6">
@@ -107,8 +110,8 @@
                             <input class="form-control" name="telefono" placeholder="+39..." required>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Indirizzo</label>
-                            <input class="form-control" name="indirizzo" required>
+                            <label class="form-label">Quante persone</label>
+                            <input class="form-control" type= "Number" name="persone" required>
                         </div>
 
                         <div class="col-md-6">
@@ -120,7 +123,11 @@
                         <div class="col-md-6">
                             <label class="form-label">Data tour (richiesta)</label>
                             <input class="form-control" type="date" name="data_tour" required>
+                            <div id="slotAlert" class="alert-danger mt-3 d-none">Questa data/ora è già occupata.scegli
+                                un altro orario,Grazie</div>
                         </div>
+                        <button id="submitBtn" class="btn btn-dark btn-lg rounded-pill px-1" type="submit">Invia
+                            Verifica la disponibilità</button>
 
                         <div class="col-12">
                             <label class="form-label">Note (opzionale)</label>
@@ -140,12 +147,14 @@
                     </div>
 
                     <div class="d-flex gap-2 flex-wrap mt-4">
-                        <button class="btn btn-dark btn-lg rounded-pill px-4" type="submit">Invia richiesta</button>
+                        <button class="btn btn-dark btn-lg rounded-pill px-4" type="submit">Invia
+                            richiesta</button>
                         <a class="btn btn-outline-dark btn-lg rounded-pill px-4" href="/">Annulla</a>
                     </div>
 
                     <p class="text-muted small mt-3 mb-0">
-                        * Questo è un form “richiesta”: la prenotazione è confermata solo dopo nostra risposta tramitte
+                        * Questo è un form “richiesta”: la prenotazione è confermata solo dopo nostra risposta
+                        tramitte
                         whatsapp/email/telefono.
                     </p>
                 </form>

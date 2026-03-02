@@ -54,7 +54,7 @@
                 <div class="hero-blur b"></div>
             </section>
 
-            {{-- BELLEZZE in cerchio --}}
+            {{-- Orbit cerchio --}}
             <section id="bellezze" class="mt-5">
                 <div class="d-flex align-items-end justify-content-cen flex-wrap gap-2">
                     <div>
