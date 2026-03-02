@@ -13,7 +13,7 @@
                 <div class="dropdown-menu dropdown-menu-end vl-menu p-3">
                     <a class="vl-item {{ request()->is('/') ? 'active' : '' }}" href="/">
                         <div class="vl-item__title">Home</div>
-                        <div class="vl-item__sub">laguna,locali.isole.bacaro-tour</div>
+                        <div class="vl-item__sub">Le esperienze</div>
                     </a>
 
                     <a class="vl-item {{ request()->is('prenota*') ? 'active' : '' }}" href="/prenota">
@@ -50,7 +50,7 @@
                     <li><a class="dropdown-item" href="#">🇫🇷 Français</a></li>
                     <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
                     <li><a class="dropdown-item" href="#">🇵🇹 Português</a></li>
-                </ul>
+                </ul> 
             </div>
 
             <!-- CTA -->

@@ -23,7 +23,7 @@
                             <div class="d-flex justify-content-between">
                                 <div>
                                     <div class="small opacity-75">Personalizza il tuo percorso </div>
-                                    <div class="h3 fw-bold mb-0">$185persona</div>
+                                    <div class="h3 fw-bold mb-0">$185 / persona</div>
                                 </div>
                                 <div class="text-end">
                                     <div class="small opacity-75">componenti</div>
@@ -66,42 +66,42 @@
                 <div class="orbit-wrap mt-4">
                     <div class="orbit-pin" aria-hidden="true"></div>
                     <div class="orbit">
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'san-marco') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=11')">
                             <span>San Marco</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'murano') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=12')">
                             <span>Murano</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'burano') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=13')">
                             <span>Burano</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'torcello') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=14')">
                             <span>Torcello</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'lido') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=15')">
                             <span>Lido</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'giudecca') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=16')">
                             <span>Giudecca</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'sant-erasmo') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=17')">
                             <span>Sant’Erasmo</span>
                         </a>
 
-                        <a class="orbit-card is-img" href="/prenota"
+                        <a class="orbit-card is-img" href="{{ route('luogo.show', 'certosa') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=18')">
                             <span>Certosa</span>
                         </a>
