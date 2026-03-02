@@ -56,7 +56,7 @@
 
             {{-- BELLEZZE in cerchio --}}
             <section id="bellezze" class="mt-5">
-                <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
+                <div class="d-flex align-items-end justify-content-cen flex-wrap gap-2">
                     <div>
                         <h2 class="h3 fw-bold mb-1">Laguna nostra</h2>
                     </div>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="orbit-wrap mt-4">
-                    <div class="orbit-pin" aria-hidden="true"></div>
+
                     <div class="orbit">
                         <a class="orbit-card is-img" href="{{ route('luogo.show', 'san-marco') }}"
                             style="--bg:url('https://picsum.photos/240/160?random=11')">
@@ -105,6 +105,7 @@
                             style="--bg:url('https://picsum.photos/240/160?random=18')">
                             <span>Certosa</span>
                         </a>
+                        <div class="orbit-pin" aria-hidden="true"></div>
                     </div>
                 </div>
 

@@ -21,6 +21,7 @@
                                         <div class="badge text-bg-light rounded-pill">2h Aperitivo a bordo && Fantastica
                                             Esperenza </div>
                                     </div>
+
                                     <span>Da $250 a Persona (1-3 Persone) </span>
                                 </div>
                             </div>
