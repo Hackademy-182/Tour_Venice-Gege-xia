@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top vl-nav vl-nav--overlay">
-    <div class="container-fluid px-3 px-md-4">
-        <a class="navbar-brand fw-bold text-white" href="/">Veniceland</a>
+    <div class="container-fluid px-3 px-md-5">
+        <a class="navbar-brand fw-bold text-success"" href="/">Veniceland</a>
 
         <div class="ms-auto d-flex align-items-center gap-2">
 
@@ -50,7 +50,7 @@
                     <li><a class="dropdown-item" href="#">🇫🇷 Français</a></li>
                     <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
                     <li><a class="dropdown-item" href="#">🇵🇹 Português</a></li>
-                </ul> 
+                </ul>
             </div>
 
             <!-- CTA -->
