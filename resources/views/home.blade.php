@@ -1,6 +1,7 @@
 <x-app-layout>
     {{-- HERO --}}
-    <div class="container-fluid px-3 px-md-4">
+   
+    <div class="container-fluid px-3 px-md-4 pt-5">
         <div class="hero-wide">
             <section class="hero-vl hero-fx p-4 p-md-5 rounded-5 text-white overflow-hidden position-relative">
                 <div class="row align-items-center g-4">
@@ -38,7 +39,7 @@
                             <div class="d-flex flex-wrap gap-2">
                                 <span class="tag-vl">Murano</span>
                                 <span class="tag-vl">Castello</span>
-                                <span class="tag-vl">S.marco</span>
+                                <span class="tag-vl">S. Marco</span>
                                 <span class="tag-vl">Lido</span>
                                 <span class="tag-vl">Giudecca</span>
                                 <span class="tag-vl">Burano</span>
@@ -59,6 +60,7 @@
                 <div class="d-flex align-items-end justify-content-cen flex-wrap gap-2">
                     <div>
                         <h2 class="h3 fw-bold mb-1">Laguna nostra</h2>
+                        <div class="vl-divider"></div>
                     </div>
 
                 </div>
@@ -142,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="row g-3 vl-pack-row">
+                <div class="row g-3 vl-pack-row packs">
                     <div class="col-md-4">
                         <div class="pack pack-bronze p-4 rounded-5 h-100 d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-start">

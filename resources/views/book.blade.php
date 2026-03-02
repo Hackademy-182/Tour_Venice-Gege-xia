@@ -10,7 +10,7 @@
         <div class="row g-4">
             <div class="col-lg-5">
                 <div class="bg-white border rounded-5 p-4 shadow-sm">
-                    <h2 class="h5 fw-bold-mb-3">1:Scegli pacchetto</h2>
+                    <h2 class="h5 fw-bold-mb-3">1) Scegli pacchetto</h2>
                     <div class="vstack gap-2">
                         <label class="vl-choice">
                             <input type="radio" name = "package" value="base" checked>

@@ -24,6 +24,7 @@ html {
 }
 body {
     padding-top: 80px; /* altezza nav circa */
+    
 }
 .glass-card {
     background: rgba(186, 5, 5, 0.12);
@@ -508,3 +509,6 @@ body {
     margin-bottom: 0;
 }
 
+.packs {
+    padding-bottom: 70px;
+}
