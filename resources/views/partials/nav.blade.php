@@ -16,7 +16,7 @@
                         <div class="vl-item__sub">laguna,locali.isole.bacaro-tour</div>
                     </a>
 
-                    <a class="vl-item {{ request()->is('prenota*') ? 'active' : '' }}" href="/prenota">
+                    <a class="vl-item {{ request()->is('prenota*') ? 'active' : '' }}" href="./prenota">
                         <div class="vl-item__title">Visita</div>
                         <div class="vl-item__sub">Tour e prenotazione</div>
                     </a>

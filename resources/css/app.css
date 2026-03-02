@@ -21,7 +21,7 @@
     background-position: center;
 }
 body {
-    padding-top: 76px; /* altezza nav circa */
+    padding-top: 20px; /* altezza nav circa */
 }
 .glass-card {
     background: rgba(186, 5, 5, 0.12);
@@ -151,7 +151,7 @@ body {
     top: 50%;
     width: 150px;
     height: 150px;
-    transform: translate(-47%, 288%) rotate(135deg);
+    transform: translate(-48%, 235%) rotate(135deg);
     border-radius: 50% 50% 50% 0;
     overflow: hidden;
     border: 2px solid rgba(14, 167, 238, 0.9);
@@ -186,10 +186,10 @@ body {
 
 /* LAYOUT */
 .vl-max {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 12px;
-    background-color: rgb(142, 223, 245);
+    max-width: 2000px;
+    margin: -40px;
+    padding: 0 15px;
+    background-color: rgb(198, 245, 251);
 }
 
 .vl-divider {
@@ -222,6 +222,32 @@ body {
     border-radius: 999px;
     background: rgba(0, 0, 0, 0.18);
 }
+.vl-choice {
+    display: block;
+    cursor: pointer;
+}
+.vl-choice input {
+    position: absolute;
+    opacity: 0;
+}
+.vl-choice__box {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    padding: 14px;
+    background: #fff;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+.vl-choice:hover .vl-choice__box {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+.vl-choice input:checked + .vl-choice__box {
+    border-color: rgba(13, 202, 240, 0.55);
+    box-shadow: 0 18px 45px rgba(13, 202, 240, 0.18);
+}
 .pack-gold .vl-list li::before {
     background: rgba(255, 193, 7, 0.65);
 }
@@ -232,8 +258,8 @@ body {
 /* PACKS */
 .pack {
     background: #fff;
-    padding: 28px;
-    border-radius: 34px;
+    padding: 20px;
+    border-radius: 70px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
     transition:
@@ -480,5 +506,3 @@ body {
     padding-left: 0;
     margin-bottom: 0;
 }
-
-ciao
