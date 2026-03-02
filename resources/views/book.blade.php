@@ -96,10 +96,7 @@
                             <input class="form-control" name="cognome" required>
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label">Codice Fiscale</label>
-                            <input class="form-control text-uppercase" name="codice_fiscale" maxlength="16" required>
-                        </div>
+
                         <div class="col-md-6">
                             <label class="form-label">Email</label>
                             <input class="form-control" type="email" name="email" required>
@@ -111,7 +108,7 @@
                         </div>
                         <div class="col-md-6">
                             <label class="form-label">Quante persone</label>
-                            <input class="form-control" type= "Number" name="persone" required>
+                            <input class="form-control" type= "Number" name="many" required>
                         </div>
 
                         <div class="col-md-6">
