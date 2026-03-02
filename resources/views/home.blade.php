@@ -22,8 +22,8 @@
                         <div class="glass-card p-4 rounded-5">
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <div class="small opacity-75">Prezzo</div>
-                                    <div class="h3 fw-bold mb-0">$120p</div>
+                                    <div class="small opacity-75">Personalizza il tuo percorso </div>
+                                    <div class="h3 fw-bold mb-0">$185persona</div>
                                 </div>
                                 <div class="text-end">
                                     <div class="small opacity-75">componenti</div>
@@ -31,16 +31,20 @@
                                 </div>
                                 <div class="text-end">
                                     <div class="small opacity-75">Durata</div>
-                                    <div class="h5 fw-semibold mb-0">1–3 ore</div>
+                                    <div class="h5 fw-semibold mb-0">2-8 ore</div>
                                 </div>
                             </div>
                             <hr class="opacity-25">
                             <div class="d-flex flex-wrap gap-2">
                                 <span class="tag-vl">Murano</span>
-                                <span class="tag-vl">S.lena</span>
-                                <span class="tag-vl">Torcello</span>
+                                <span class="tag-vl">Castello</span>
+                                <span class="tag-vl">S.marco</span>
                                 <span class="tag-vl">Lido</span>
                                 <span class="tag-vl">Giudecca</span>
+                                <span class="tag-vl">Burano</span>
+                                <span class="tag-vl">Canareggio</span>
+                                <span class="tag-vl">Celtosa</span>
+                                <span class="tag-vl">Arsenale</span>
                             </div>
                         </div>
                     </div>

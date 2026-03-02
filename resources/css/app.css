@@ -20,7 +20,9 @@
     background-size: cover;
     background-position: center;
 }
-
+body {
+    padding-top: 76px; /* altezza nav circa */
+}
 .glass-card {
     background: rgba(186, 5, 5, 0.12);
     border: 1px solid rgba(246, 42, 42, 0.18);
@@ -149,10 +151,10 @@
     top: 50%;
     width: 150px;
     height: 150px;
-    transform: translate(-47%, 140%) rotate(135deg);
+    transform: translate(-47%, 288%) rotate(135deg);
     border-radius: 50% 50% 50% 0;
     overflow: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(14, 167, 238, 0.9);
     box-shadow: 0 22px 70px rgba(0, 0, 0, 0.18);
     z-index: 1;
 }
@@ -187,6 +189,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
+    background-color: rgb(142, 223, 245);
 }
 
 .vl-divider {
@@ -354,4 +357,126 @@
     .hero-fx {
         background-attachment: scroll;
     }
+}
+.vl-nav {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        backdrop-filter 0.25s ease;
+}
+
+.vl-nav--overlay {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vl-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 999px;
+    padding: 0.45rem 0.9rem;
+}
+
+.vl-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+}
+
+.vl-link.active {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff !important;
+    font-weight: 700;
+}
+
+/* Quando scrolli: diventa glass */
+.vl-nav.is-scrolled {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.vl-nav.is-scrolled .navbar-brand {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.vl-nav.is-scrolled .vl-link {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+.vl-nav.is-scrolled .vl-link:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.vl-nav.is-scrolled .vl-link.active {
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+.vl-burger {
+    width: 46px;
+    height: 46px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.vl-burger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: rgba(20, 15, 15, 0.9);
+    border-radius: 999px;
+    margin: 3px 0;
+}
+
+.vl-menu {
+    min-width: 320px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(20, 30, 45, 0.72);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.vl-item {
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 14px;
+    color: rgba(1, 14, 12, 0.88);
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease;
+}
+
+.vl-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(3px);
+    color: #a8f1ee;
+}
+
+.vl-item.active {
+    background: rgba(255, 255, 255, 0.14);
+    font-weight: 700;
+}
+
+.vl-item__title {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+.vl-item__sub {
+    font-size: 0.88rem;
+    opacity: 0.75;
+}
+.vl-nav {
+    z-index: 1030;
+}
+.vl-menu {
+    z-index: 1050;
+}
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }

@@ -9,22 +9,10 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
-
-            <a class="navbar-brand fw-bold" href="/">Veniceland</a>
-
-            <div>
-                <a class="nav-link d-inline" href="/">Home</a>
-                <a class="nav-link d-inline" href="/prenota">Prenota</a>
-                <a class="nav-link d-inline" href="/contact">Contact</a>
-                <a class="nav-link d-inline" href="/fonts">Fonts</a>
-            </div>
-        </div>
-    </nav>
 
     <main class="flex-fill container-fluid py-5">
         <div class="vl-max">
+            @include('partials.nav')
             {{ $slot }}
         </div>
     </main>
